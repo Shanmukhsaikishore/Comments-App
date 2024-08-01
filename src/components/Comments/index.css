@@ -1,0 +1,134 @@
+.bg-container {
+  font-family: 'Roboto';
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-section {
+  width: 90%;
+}
+
+.card-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.comments-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+}
+.comments-image {
+  height: 300px;
+  width: 50%;
+}
+.main-heading {
+  font-size: 42px;
+  color: #1e293b;
+}
+.comments-label {
+  color: #475569;
+  font-weight: 500;
+  font-family: 'Roboto';
+  font-size: 15px;
+}
+.form-name {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 17px;
+  outline: none;
+  border: 2px solid #dee0e3;
+  font-family: 'Roboto';
+  width: 100%;
+}
+.form-comment {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 17px;
+  font-family: 'Roboto';
+  outline: none;
+  border: 2px solid #dee0e3;
+  height: 150px;
+  width: 100%;
+}
+.button {
+  align-self: flex-start;
+  border-width: 0px;
+  color: #dee0e3;
+  background-color: #0284c7;
+  height: 30px;
+  width: 120px;
+  border-radius: 5px;
+  font-family: 'Roboto';
+  cursor: pointer;
+}
+.separator {
+  border: 1px solid #cbd2d9;
+}
+
+.bottom-section {
+  width: 90%;
+}
+
+.comment-count-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+.count {
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0284c7;
+  font-size: 13px;
+  color: #dee0e3;
+}
+
+.para {
+  align-self: center;
+  margin-left: 5px;
+  font-family: 'Roboto';
+  color: #475569;
+  font-weight: 500;
+}
+
+.comments-container {
+  padding-left: 0px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 767px) {
+  .card-container {
+    flex-direction: column;
+  }
+  .comments-form {
+    width: 100%;
+    order: 1;
+  }
+  .comments-image {
+    width: 100%;
+    order: 0;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+  .comments-label {
+    margin-bottom: 10px;
+  }
+  .form-name {
+    margin-bottom: 10px;
+  }
+  .form-comment {
+    margin-bottom: 10px;
+  }
+}
